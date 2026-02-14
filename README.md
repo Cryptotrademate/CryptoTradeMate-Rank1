@@ -33,7 +33,9 @@ cargo build --release --features avx512
 
 ---
 
-## Technical Deep Dive
+---
+
+## 🔬 Technical Deep Dive
 
 ### 1. Understanding Head-of-Line (HoL) Blocking in Web3
 
@@ -68,6 +70,7 @@ Rank-1 acts as a transparent sidecar. You don't need to rewrite your strategy; j
 // Point your provider to the Rank-1 Sidecar local port
 let provider = Provider::<Http>::try_from("http://127.0.0.1:8545")?;
 
+```
 
 **Python (`web3.py`):**
 
@@ -76,6 +79,7 @@ from web3 import Web3
 # Traffic is automatically optimized by the Rank-1 daemon
 w3 = Web3(Web3.HTTPProvider('http://127.0.0.1:8545'))
 
+```
 
 ### 5. The Jitter Tax Audit: Measuring the Gap
 
@@ -84,13 +88,17 @@ The Rank-1 CLI includes a built-in auditing tool to visualize exactly how much A
 ```bash
 rank1-cli audit --target https://your-rpc-node.com --duration 60s
 
+```
+
 **Output includes:**
 
 * **The Jitter Tax:** The cumulative time lost to TCP retransmissions.
 * **Reconstruction Delta:** The speed advantage gained via RLNC.
 * **Rank-K Sufficiency Score:** Your network’s current algebraic health.
 
-## Stop Paying the Jitter Tax
+---
+
+## ⚡️ Stop Paying the Jitter Tax
 
 Your competition is already optimizing their code. **Rank-1 optimizes the physics.** Join the vanguard of institutional traders moving toward algebraic certainty.
 
@@ -98,3 +106,5 @@ Your competition is already optimizing their code. **Rank-1 optimizes the physic
 
 For full documentation and institutional support, visit the official site:
 🔗 **[cryptotrademate.com](https://cryptotrademate.com/cryptotrademate-rank-1/)**
+
+---
