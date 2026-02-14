@@ -22,19 +22,6 @@ Optimized for SIMD-accelerated CPU architectures (Ice Lake, Zen 4).
 | **Max Jitter** | 120ms | **4.1ms** | **-96%** |
 | **Sync Time (1GB)** | Variable | **Deterministic** | **Guaranteed** |
 
-## Quick Start
-
-```bash
-# Deploy the Rank-1 Sidecar via Replit/Local
-git clone https://github.com/YourRepo/Rank-1.git
-cd Rank-1
-cargo build --release --features avx512
-./target/release/rank1-sidecar --rpc-url http://your-node:8545
-
----
-
----
-
 ## 🔬 Technical Deep Dive
 
 ### 1. Understanding Head-of-Line (HoL) Blocking in Web3
@@ -106,5 +93,16 @@ Your competition is already optimizing their code. **Rank-1 optimizes the physic
 
 For full documentation and institutional support, visit the official site:
 🔗 **[cryptotrademate.com](https://cryptotrademate.com/cryptotrademate-rank-1/)**
+
+---
+
+## Quick Start
+
+```bash
+# Deploy the Rank-1 Sidecar via Replit/Local
+git clone https://github.com/YourRepo/Rank-1.git
+cd Rank-1
+cargo build --release --features avx512
+./target/release/rank1-sidecar --rpc-url http://your-node:8545
 
 ---
